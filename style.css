@@ -1,0 +1,180 @@
+/* 全局样式 */
+body {
+    font-family: "SimSun","STSong","FangSong", serif;
+    font-weight:bold;
+    line-height: 1.6;
+    background-image: url("images/background.png"); /* 设置图片背景 */
+    background-size: cover; /* 背景图片自适应大小 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 导航条样式 */
+header {
+    background-color: #333;
+    padding: 5px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #ccc;
+}
+
+/* 内容区域样式 */
+main {
+    max-width: 960px;
+    width: 80%; /* 设置main元素宽度为80% */
+    margin: 5px auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+main h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+main p {
+    margin-bottom: 1rem;
+}
+
+/* 设置页面最小高度 */
+html {
+    height: 100%;
+}
+
+/* 设置 body 最小高度为 100%，并使用 flexbox 将内容和页脚分开 */
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 使 main 元素填充所有可用空间 */
+main {
+    flex-grow: 1;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #1F1F1F; /* 设置页脚背景颜色为黑曜石颜色 */
+    color: #ffffff; /* 设置页脚文本颜色为白色 */
+    text-align: center; /* 设置页脚文本居中 */
+    padding: 5px; /* 设置页脚内边距 */
+}
+
+
+/* 图片链接的水平布局 */
+.image-links {
+    display: flex;
+    justify-content: center; /* 水平方向上居中图片链接 */
+    align-items: center; /* 垂直方向上居中对齐图片链接 */
+    flex-wrap: wrap; /* 如果空间不足，允许链接换行 */
+    margin-bottom: 2rem; /* 增加底部外边距 */
+}
+
+.image-links a {
+    display: inline-block;
+    margin: 0 1rem; /* 为链接增加左右边距 */
+    text-decoration: none; /* 移除链接下划线 */
+}
+
+.image-links img {
+    width: 250px; /* 设置图片的最大宽度 */
+    height: auto;
+    display: block;
+    margin: 1rem auto; /* 为图片增加上下边距，并使其水平居中 */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* 为图片添加阴影 */
+}
+
+.site-logo {
+    width: auto;
+    height: 200px;
+}
+
+.site-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-img {
+    width: 100px;
+    height: auto;
+}
+
+/* 单独设置字体样式 */
+.custom-font {
+    font-family: "SimSun","STSong","FangSong", serif;
+    font-weight: bold;
+}
+
+.card {
+    position: absolute;
+    top: 100button[type="submit"] {
+                background-color: #4CAF50; /* 设置背景颜色 */
+                border: none; /* 去除边框 */
+                color: white; /* 设置文本颜色 */
+                padding: 12px 24px; /* 设置内边距 */
+                text-align: center; /* 设置文本居中 */
+                text-decoration: none; /* 去除文本下划线 */
+                display: inline-block; /* 将按钮转为行内块元素 */
+                font-size: 16px; /* 设置字体大小 */
+                font-weight: bold; /* 设置字体加粗 */
+                border-radius: 4px; /* 设置圆角 */
+                transition: background-color 0.3s ease-in-out; /* 添加渐变过渡效果 */
+            }
+
+button[type="submit"]:hover {
+    background-color: #3e8e41; /* 设置鼠标悬停时的背景颜色 */
+}
+px;
+    left:160px ;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    max-width: 100px;
+    height: auto;
+}
+
+main p {
+    margin: 0.5em 0;
+}
+
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - HelpfulTools</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function switchLanguage() {
+            window.location.href = "contact_en.html";
+        }
+    </script>
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="features.html">应用列表</a></li>
+            <li><a href="contact.html">联系我</a></li>
+        </ul>
+    </nav>
+    <div class="lang-switch">
+        <button onclick="switchLanguage()">切换语言</button>
+    </div>
+</header>
+
+<main>
+    <h1>联系我</h1>
+
+    <div class="contact-info">
+        <h2>联系信息</h2>
+        <ul>
+            <li>网站名称：HelpfulTools</li>
+            <li>地址：北京市xx区xx街xx号</li>
+            <li>电话：010-12345678</li>
+            <li>电子邮件：contact@helpfultools.com</li>
+        </ul>
+    </div>
+
+    <div class="contact-form">
+        <h2>发送信息</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">电子邮件：</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">消息：</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">发送</button>
+        </form>
+    </div>
+
+</main>
+
+<footer>
+    <p>版权所有 &copy; 2023 - HelpfulTools介绍网站</p>
+</footer>
+
+</body>
+
+</html>
+
+
