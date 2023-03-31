@@ -32,7 +32,6 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-
 header nav ul li a:hover {
     color: #ccc;
 }
@@ -111,6 +110,11 @@ footer {
     display: block;
     margin: 1rem auto; /* 为图片增加上下边距，并使其水平居中 */
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* 为图片添加阴影 */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-links img:hover {
+    transform: translateY(-10px); /* 在鼠标悬停时将图片向上移动10像素 */
 }
 
 .site-logo {
@@ -178,3 +182,18 @@ main p {
     top: 20px;
     right: 20px;
 }
+
+
+.lang-button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.lang-button:hover {
+    color: #ccc;
+}
+
